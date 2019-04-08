@@ -9,6 +9,7 @@ import org.lwjgl.input.Keyboard;
 
 import com.zeekofox.tectocraft.items.PogoStick;
 import com.zeekofox.tectocraft.items.FlashLight;
+import com.zeekofox.tectocraft.items.FlashLight1;
 import com.zeekofox.tectocraft.items.ItemBase;
 import com.zeekofox.tectocraft.items.tools.ArmorBase;
 import com.zeekofox.tectocraft.items.tools.ToolAxe;
