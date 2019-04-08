@@ -4,7 +4,6 @@
         "layer0": "tc:items/flashlight_off"
     },
     "overrides": [
-        { "predicate": {"damaged": 0, "damage": 0}, "model": "tc:items/flashlight_off"},
-        { "predicate": {"damaged": 1, "damage": 1}, "model": "tc:items/flashlight_on"}
+        { "predicate": {"damaged": 1, "damage": 0.1}, "model": "tc:items/flashlight_on"}
     ]
 }

@@ -47,7 +47,7 @@ public class FlashLight extends ItemBase implements IHasModel{
 	@Override
 	 public void onUpdate(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
    {
-		if(stack.getItemDamage() == 1) {
+		if(!worldIn.isRemote && stack.getItemDamage() != 0) {
 		int x = (int) Math.floor(entityIn.posX);
 		int y = (int) entityIn.posY + 1;
 		int z = (int) Math.floor(entityIn.posZ);
@@ -60,10 +60,12 @@ public class FlashLight extends ItemBase implements IHasModel{
 	 public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
 	    {
 		 	ItemStack stack = playerIn.getHeldItemMainhand();
-			if(stack.getItemDamage() == 0)
+			if(stack.getItemDamage() == 0) {
 				stack.setItemDamage(1);
-			else
+			}
+			else {
 				stack.setItemDamage(0);
+			}
 			return ActionResult.newResult(EnumActionResult.SUCCESS, stack);
 		 
 	    }
