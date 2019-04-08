@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "RRR",
+        " S ",
+        " S "
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "tc:tectonium_ingot"
+        },
+         "S":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+   
+    "result":
+    {
+        "item": "tc:tectonium_pickaxe",
+        "count": 1
+    }
+}

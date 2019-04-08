@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+ 
+    "ingredients":
+    [
+ 
+    {
+      "item": "tc:tungsten_block"
+    }
+   
+    ],
+ 
+    "result":
+    {
+        "item": "tc:tungsten_ingot",
+        "count": 9
+    }
+}

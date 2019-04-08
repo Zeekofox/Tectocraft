@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+ 
+    "ingredients":
+    [
+ 
+    {
+      "item": "tc:tectonium_block"
+    }
+   
+    ],
+ 
+    "result":
+    {
+        "item": "tc:tectonium_ingot",
+        "count": 9
+    }
+}

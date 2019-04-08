@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "RRR",
+        "RRR",
+        "RRR"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "tc:tectonium_ingot"
+        }
+    },
+   
+    "result":
+    {
+        "item": "tc:tectonium_block",
+        "count": 1
+    }
+}

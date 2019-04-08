@@ -1,0 +1,16 @@
+[
+{
+  "modid": "tc",
+  "name": "Tectocraft",
+  "description": "Just fooling around",
+  "version": "0.1 pre-alpha",
+  "mcversion": "1.12.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Zeekofox"],
+  "credits": "",
+  "logoFile": "assets/tectocraft/logo/logo.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
