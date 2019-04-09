@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "IPI",
+        "ILI",
+        "III"
+    ],
+   
+    "key":
+    {
+        "I":
+        {
+            "item": "minecraft:iron_ingot"
+        },
+          "L":
+        {
+            "item": "tc:led"
+        },
+          "P":
+        {
+            "item": "minecraft:glass_pane"
+        }
+    },
+   
+    "result":
+    {
+        "item": "tc:flashlight",
+        "count": 1
+    }
+}

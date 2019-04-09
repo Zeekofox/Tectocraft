@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "PPP",
+        "PTP",
+        "GPG"
+    ],
+   
+    "key":
+    {
+          "G":
+        {
+            "item": "minecraft:gold_nugget"
+        },
+          "P":
+        {
+            "item": "minecraft:glass_pane"
+        },
+          "T":
+        {
+            "item": "tc:tungsten_ingot"
+        }
+    },
+   
+    "result":
+    {
+        "item": "tc:led",
+        "count": 1
+    }
+}

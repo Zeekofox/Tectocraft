@@ -9,7 +9,7 @@ import com.zeekofox.tectocraft.blocks.TungstenBlock;
 import com.zeekofox.tectocraft.blocks.TungstenOreEnd;
 import com.zeekofox.tectocraft.blocks.TungstenOreNether;
 import com.zeekofox.tectocraft.blocks.TungstenOreWorld;
-import com.zeekofox.tectocraft.blocks.flashlight0;
+import com.zeekofox.tectocraft.blocks.Flashlight0;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -22,5 +22,5 @@ public class ModBlocks {
 	public static final Block TUNGSTEN_ORE_WORLD = new TungstenOreWorld("tungsten_ore_world", Material.ROCK);
 	public static final Block TUNGSTEN_ORE_NETHER = new TungstenOreNether("tungsten_ore_nether", Material.ROCK);
 	public static final Block TUNGSTEN_ORE_END = new TungstenOreEnd("tungsten_ore_end", Material.ROCK);
-	public static final Block FLASHLIGHT0 = new flashlight0(Material.AIR);
+	public static final Block FLASHLIGHT0 = new Flashlight0(Material.AIR);
 }

@@ -11,6 +11,7 @@ import com.zeekofox.tectocraft.items.PogoStick;
 import com.zeekofox.tectocraft.items.FlashLight;
 import com.zeekofox.tectocraft.items.FlashLight1;
 import com.zeekofox.tectocraft.items.ItemBase;
+import com.zeekofox.tectocraft.items.MegaMagnet;
 import com.zeekofox.tectocraft.items.tools.ArmorBase;
 import com.zeekofox.tectocraft.items.tools.ToolAxe;
 import com.zeekofox.tectocraft.items.tools.ToolHoe;
@@ -89,5 +90,6 @@ public class ModItems {
 	
 	
 	public static final Item POGO_STICK = new PogoStick("pogo_stick");
-	public static final Item FLASHLIGHT = new FlashLight("flashlight");
+	public static final Item FLASHLIGHT = new FlashLight1("flashlight");
+	public static final Item MEGA_MAGNET = new MegaMagnet("mega_magnet");
 }

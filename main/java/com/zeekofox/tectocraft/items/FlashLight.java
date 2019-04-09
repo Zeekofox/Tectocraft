@@ -12,14 +12,20 @@ import com.zeekofox.tectocraft.init.ModBlocks;
 import com.zeekofox.tectocraft.utils.IHasModel;
 
 import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.IItemPropertyGetter;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.NonNullList;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
@@ -30,6 +36,9 @@ public class FlashLight extends ItemBase implements IHasModel{
 	public FlashLight(String name) {
 		super(name);
 		this.setMaxStackSize(1);
+		this.setHasSubtypes(true);
+		this.setMaxDamage(0);
+		this.addPropertyOverride(new ResourceLocation("state"), new SubItemPropertyGetter());
 	}
 	@SideOnly(Side.CLIENT)
 	public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
@@ -43,6 +52,12 @@ public class FlashLight extends ItemBase implements IHasModel{
 		}else{
 			tooltip.add(TextFormatting.ITALIC+"Press " + TextFormatting.YELLOW+ "SHIFT" +TextFormatting.GRAY + TextFormatting.ITALIC+" for information");
 		}
+	}
+	public class SubItemPropertyGetter implements IItemPropertyGetter{
+	    @Override
+	    public float apply(ItemStack stack, World worldIn, EntityLivingBase entityIn) {
+	        return stack.getItemDamage();
+	    }
 	}
 	@Override
 	 public void onUpdate(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)

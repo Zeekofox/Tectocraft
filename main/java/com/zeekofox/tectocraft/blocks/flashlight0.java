@@ -23,9 +23,9 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class flashlight0 extends BlockAir{
+public class Flashlight0 extends BlockAir{
 	
-	public flashlight0(Material material) {
+	public Flashlight0(Material material) {
 		super();
 		this.setLightLevel(1F);
 		this.setTickRandomly(true);
