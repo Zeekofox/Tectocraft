@@ -24,7 +24,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class PogoStick extends ItemBase implements IHasModel{
 
-	public static final int COOLDOWN = 10;
+	public static final int COOLDOWN = 15;
 	public PogoStick(String name) {
 		super(name);
 		setMaxDamage(1024);
