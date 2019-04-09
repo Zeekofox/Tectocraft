@@ -80,7 +80,7 @@ public class ModItems {
 	public static final ItemSword TECTONIUM_SWORD = new ToolSword("tectonium_sword", MATERIAL_TECTONIUM);
 	public static final ItemPickaxe TECTONIUM_PICKAXE = new ToolPickaxe("tectonium_pickaxe", MATERIAL_TECTONIUM);
 	public static final ItemSpade TECTONIUM_SHOVEL = new ToolShovel("tectonium_shovel", MATERIAL_TECTONIUM);
-	public static final ItemHoe TECTONIUM_HOE = new ToolHoe("tectonium_Hoe", MATERIAL_TECTONIUM);
+	public static final ItemHoe TECTONIUM_HOE = new ToolHoe("tectonium_hoe", MATERIAL_TECTONIUM);
 	
 	public static final Item TECTONIUM_HELMET = new ArmorBase("tectonium_helmet", ARMOR_MATERIAL_TECTONIUM, 1, EntityEquipmentSlot.HEAD);
 	public static final Item TECTONIUM_CHESTPLATE = new ArmorBase("tectonium_chestplate", ARMOR_MATERIAL_TECTONIUM, 1, EntityEquipmentSlot.CHEST);
